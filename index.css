@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+body{
+    font-family: 'Acme', sans-serif;
+}
+
+nav{
+    height: 150vh;
+    width: 100%;
+    background-image: url("img/restaurantdesign.jpg");
+    background-repeat: no-repeat;
+}
+
+.viber{
+    color: #59267c;
+}
+
+.logocolor{
+    color: #D6161C;
+}
+
+
+
