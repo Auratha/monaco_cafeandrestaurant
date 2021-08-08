@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Monaco Cafe & Restaurant</title>
     <link rel="icon" type="image/png" href="./img/restaurantlogo.png" sizes="any" />
 </head>
@@ -12,48 +13,62 @@
 <!--font awesome css1-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <body>
-<!--    Start Navbar Section-->
-    <nav id="home">
-        <div class="row bg-light align-items-center fixed-top">
-            <div class="col-2">
-                <div class="row text-center">
-                    <a class="text-decoration-none" href="#"><img src="img/restaurantlogo-removebg.png" alt="monaco logo" width="130px" height="70px"/></a>
-                </div>
-                <div class="row text-center">
-                    <span class="logocolor">Cafe And Restaurant</span>
-                </div>
-            </div>
-            <div class="col-8">
-                <ul class="nav p-2 justify-content-center fs-3">
-                    <li class="nav-item mx-1"><a href="#home" class="nav-link text-dark">Home</a></li>
-                    <li class="nav-item mx-1"><a href="#about" class="nav-link text-dark">About</a></li>
-                    <li class="nav-item mx-1"><a href="#visit" class="nav-link text-dark">Visit Us</a></li>
-                    <li class="nav-item mx-1"><a href="#review" class="nav-link text-dark">Review</a></li>
-                </ul>
-            </div>
-            <div class="col-2 text-center">
-                <a class="text-primary mx-1" href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                <a class="viber mx-1" href="#"><i class="fab fa-viber fa-2x"></i></a>
-            </div>
 
+<!--    Start Navbar Section-->
+    <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top">
+    <div class="col-sm-12 col-md-4 col-lg-2">
+        <div class="row text-center">
+            <a class="text-decoration-none" href="#"><img src="img/restaurantlogo-removebg.png" alt="monaco logo" width="130px" height="70px"/></a>
+        </div>
+        <div class="row text-center">
+            <span class="logocolor">Cafe And Restaurant</span>
+        </div>
+    </div>
+    <button class="navbar-toggler my-1 mx-sm-auto" type="button" data-bs-toggle="collapse" data-bs-target="#item">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse col-sm-12 col-md-4 col-lg-8 text-center" id="item">
+        <ul class="navbar-nav p-2 fs-3 mx-auto">
+            <li class="nav-item mx-1"><a href="#home" class="nav-link text-dark">Home</a></li>
+            <li class="nav-item mx-1"><a href="#about" class="nav-link text-dark">About</a></li>
+            <li class="nav-item mx-1"><a href="#visit" class="nav-link text-dark">Visit Us</a></li>
+            <li class="nav-item mx-1"><a href="#review" class="nav-link text-dark">Review</a></li>
+        </ul>
+        <div class="d-sm-block d-md-none d-lg-none">
+            <a class=" nav-link text-primary mx-1 mt-1" href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a class=" nav-link viber mx-1 mt-1" href="#"><i class="fab fa-viber fa-2x"></i></a>
         </div>
 
-    </nav>
+    </div>
 
+    <div class="col-sm-12 col-md-4 col-lg-2 d-sm-none d-md-block d-lg-block d-none text-center container-fluid justify-content-center ">
+        <a class="text-primary mx-1 mt-1" href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a class="viber mx-1 mt-1" href="#"><i class="fab fa-viber fa-2x"></i></a>
+    </div>
+    </nav>
 <!--End Navbar Section-->
+
+<!--Start Img Section-->
+    <section id="home">
+        <div class="container-fluid">
+            <img src="img/restaurantdesign.jpg" alt="restaurantdesign" width="100%">
+        </div>
+    </section>
+<!--End Img Section-->
 
 <!--Start About Us Section-->
     <section id="about">
         <div class="container-fluid bg-light p-4">
             <h1 class="text-dark text-center">About Us</h1>
             <div class="row p-2">
-                <div class="col-4 text-center">
+                <div class="col-sm-12 col-md-4 my-auto text-center">
                     <img class="shadow-lg img-thumbnail h-75" src="img/food1.jpg" alt="cheese pizza"/>
                 </div>
-                <div class="col-4 text-center mt-5">
+                <div class="col-sm-12 col-md-4 my-5 text-center">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 </div>
-                <div class="col-4 text-center">
+                <div class="col-sm-12 col-md-4 my-auto text-center">
                     <img class="shadow-lg img-thumbnail h-75" src="img/food2.jpg" alt="sandwich"/>
                 </div>
             </div>
@@ -64,12 +79,12 @@
 <!--End About Us Section-->
 
 <!--Start Nice Place To Take Photo Section-->
-    <section>
+    <section class="takephoto">
         <div class="container-fluid yellowlight p-3">
             <h1 class="text-center my-4">Nice Place To Take Photo</h1>
             <div class="row">
-                <div class="col-12 text-center">
-                    <img id="changeimg" class="img-thumbnail" src="img/shooting/img1.jpg" alt="decoration1" width="800px"/>
+                <div class="text-center">
+                    <img id="changeimg" class="img-thumbnail" src="img/shooting/img1.jpg" alt="decoration1"/>
                 </div>
 
             </div>
@@ -83,7 +98,7 @@
         <div class="container-fluid bg-light p-3">
             <h1 class="text-dark text-center my-3">Visit Us</h1>
             <div class="row">
-                <div class="col-6">
+                <div class="col-sm-12 col-md-12 col-lg-6 mb-4">
                     <div class="card">
                         <div class="card-body">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.842555791445!2d96.56247364922669!3d20.635273386145137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ceb7373573a637%3A0xbd4dd918eee47261!2sMonaco%20Caf%C3%A9%20%26%20Restaurant!5e0!3m2!1sen!2sjp!4v1627202505283!5m2!1sen!2sjp" width="100%" height="293px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -98,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-sm-12 col-md-12 col-lg-6 mb-3">
                     <div class="card">
                         <div class="container text-center whitelight p-3">
                             <img class="img-thumbnail box-shadow-lg text-center p-3" src="img/owner.jpg" alt="owner" width="200px">
@@ -128,7 +143,7 @@
         <h1 class="text-dark text-center">Review</h1>
         <h4 class="text-dark text-center mb-3">Our Customer Five Star Review</h4>
         <div class="row">
-            <div class="col-7 whitelight mx-5 p-5 rounded box-shadow-lg">
+            <div class="col-sm-10 col-lg-7 whitelight mx-5 p-5 rounded box-shadow-lg">
                 <div class="row">
                     <div class="col-12">
                         <img class="rounded-circle" src="img/review1.jpg" alt="review" width="70px">
@@ -155,7 +170,7 @@
         </div>
 
         <div class="row my-4 justify-content-end">
-            <div class="col-7 whitelight mx-5 p-5 rounded">
+            <div class="col-sm-10 col-lg-7 whitelight mx-5 p-5 rounded">
                 <div class="row">
                     <div class="col-12">
                         <img class="rounded-circle" src="img/review2.jpg" alt="review" width="70px">
@@ -171,7 +186,7 @@
         </div>
 
         <div class="row">
-            <div class="col-7 whitelight mx-5 p-5 rounded">
+            <div class="col-sm-10 col-lg-7 whitelight mx-5 p-5 rounded">
                 <div class="row">
                     <div class="col-12">
                         <img class="rounded-circle" src="img/review3.jpg" alt="review" width="70px">
@@ -190,7 +205,7 @@
         </div>
 
         <div class="row my-4 justify-content-end">
-            <div class="col-7 whitelight mx-5 p-5 rounded">
+            <div class="col-sm-10 col-lg-7 whitelight mx-5 p-5 rounded">
                 <div class="row">
                     <div class="col-12">
                         <img class="rounded-circle" src="img/review4.png" alt="review" width="70px">
@@ -211,7 +226,7 @@
 <!--Start Footer Section-->
 <footer>
     <div class="container-fluid bg-light ">
-        <p class="text-end fs-12 mt-3"><a class="text-primary mx-1" href="#"><i class="fab fa-facebook fa-1x"></i></a>Design and Write by Au Ra Tha</p>
+        <p class="text-start fs-12 mt-3"><a class="text-primary mx-1" href="#"><i class="fab fa-facebook fa-1x"></i></a>Design and Write by Au Ra Tha</p>
     </div>
 </footer>
 <!--End Footer Section-->
@@ -228,3 +243,29 @@
 </body>
 </html>
 
+<!--<nav id="home">-->
+<!--    <div class="row bg-light align-items-center fixed-top">-->
+<!--        <div class="col-2">-->
+<!--            <div class="row text-center">-->
+<!--                <a class="text-decoration-none" href="#"><img src="img/restaurantlogo-removebg.png" alt="monaco logo" width="130px" height="70px"/></a>-->
+<!--            </div>-->
+<!--            <div class="row text-center">-->
+<!--                <span class="logocolor">Cafe And Restaurant</span>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-8">-->
+<!--            <ul class="nav p-2 justify-content-center fs-3">-->
+<!--                <li class="nav-item mx-1"><a href="#home" class="nav-link text-dark">Home</a></li>-->
+<!--                <li class="nav-item mx-1"><a href="#about" class="nav-link text-dark">About</a></li>-->
+<!--                <li class="nav-item mx-1"><a href="#visit" class="nav-link text-dark">Visit Us</a></li>-->
+<!--                <li class="nav-item mx-1"><a href="#review" class="nav-link text-dark">Review</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div class="col-2 text-center">-->
+<!--            <a class="text-primary mx-1" href="#"><i class="fab fa-facebook fa-2x"></i></a>-->
+<!--            <a class="viber mx-1" href="#"><i class="fab fa-viber fa-2x"></i></a>-->
+<!--        </div>-->
+
+<!--    </div>-->
+
+<!--</nav>-->

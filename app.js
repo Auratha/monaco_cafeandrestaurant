@@ -10,5 +10,5 @@ setInterval(function () {
     imgplace.src = shootingimages[index];
     index > shootingimages.length - 2 ? index = 0 : index++;
     console.log(index);
-}, 3000);
+}, 2000);
 

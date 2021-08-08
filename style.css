@@ -4,13 +4,6 @@ body{
     font-family: 'Acme', sans-serif;
 }
 
-nav{
-    height: 150vh;
-    width: 100%;
-    background-image: url("img/restaurantdesign.jpg");
-    background-repeat: no-repeat;
-}
-
 .viber{
     color: #59267c;
 }
@@ -27,3 +20,6 @@ nav{
     background-color: #FFF1A3;
 }
 
+.takephoto img{
+    max-width: 70vw;
+}
