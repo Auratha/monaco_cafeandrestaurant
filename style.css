@@ -2,6 +2,8 @@
 
 body{
     font-family: 'Acme', sans-serif;
+
+    overflow-x: hidden;
 }
 
 .viber{
@@ -22,6 +24,17 @@ body{
 
 .takephoto img{
     max-width: 70vw;
+}
+
+.maketextinimg{
+    position: relative;
+}
+
+.maketextinimg h4{
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+
 }
 
 
